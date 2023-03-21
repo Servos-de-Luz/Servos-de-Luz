@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+/* Cyan  Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+	--font-family: 'Source Sans Pro', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell',
+		'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji';
+	--primary: rgb(0, 171, 194);
+	--primary-hover: rgb(0, 151, 167);
+	--primary-focus: rgba(0, 172, 193, 0.125);
+	--primary-inverse: #fff;
+}
