@@ -7,8 +7,13 @@
 	--font-family: 'Source Sans Pro', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell',
 		'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
 		'Noto Color Emoji';
-	--primary: rgb(0, 171, 194);
-	--primary-hover: rgb(0, 151, 167);
-	--primary-focus: rgba(0, 172, 193, 0.125);
-	--primary-inverse: #fff;
+	--secondary: #13217c;
+	--secondary-hover: #13237c;
+	--secondary-focus: #13217c20;
+	--secondary-inverse: #fff;
+
+	--primary: #f8b90d;
+	--primary-hover: #f8b50d;
+	--primary-focus: #f8b90d20;
+	--primary-inverse: #c7c7c7;
 }
