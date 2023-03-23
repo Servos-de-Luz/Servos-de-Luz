@@ -2,6 +2,7 @@
 	import '@picocss/pico';
 	import '../app.css';
 
+	// FIXME: Make logo_sm 5% bigger
 	import logo from '$lib/assets/logo_nobg_sm.webp';
 
 	import whatsapp from '$lib/assets/icons/whatsapp.svg';
@@ -67,7 +68,7 @@
 	<br />
 </footer>
 
-<style>
+<style lang="scss">
 	/* .hero {
 		background-color: #394046;
 		background-image: url(https://source.unsplash.com/random/1920x1080/?white);
@@ -87,24 +88,25 @@
 		color: var(--primary-inverse);
 	}
 
-	#page-tittle {
-	}
-
 	#page-logo {
+		cursor: pointer;
+		border-radius: 15px;
+		background: radial-gradient(rgba(0, 0, 0, 0.062), transparent);
 		width: 72px;
+
+		&:hover {
+			transition: 65ms;
+			transform: scale(105%);
+		}
 	}
 
 	.nav-link {
 		width: 48px;
-		transition: 125ms;
-	}
+		transition: 65ms;
 
-	.nav-link:hover {
-		transition: 125ms;
-		transform: scale(125%);
-	}
-
-	.active {
-		font-weight: bold;
+		&:hover {
+			transition: 65ms;
+			transform: scale(125%);
+		}
 	}
 </style>

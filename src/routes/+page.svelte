@@ -12,8 +12,15 @@
 	<section class="hero">
 		<div class="darkener">
 			<div class="container hero-text">
-				<h2>a</h2>
-				<p>a</p>
+				<h1>Servos de Luz</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit metus, accumsan in
+					orci quis, lobortis cursus felis. Aenean bibendum turpis eget laoreet semper. Nulla
+					tincidunt, ante eget blandit eleifend, urna sapien tristique tellus, quis lacinia velit
+					magna ac ex. Donec sed risus libero. Maecenas ac cursus lorem, vitae tincidunt ante.
+					Mauris venenatis lobortis feugiat. Nam diam leo, dapibus ut nisl sit amet, imperdiet
+					lobortis lacus.
+				</p>
 				<a href="/about" role="button" class="secondary">Leia Mais</a>
 			</div>
 		</div>
@@ -63,12 +70,15 @@
 		padding-block: 8rem;
 		text-align: center;
 
-		h2 {
+		h1 {
+			font-weight: 400;
 			margin-block: 0.5rem;
 			color: var(--secondary);
 		}
 
 		p {
+			padding-inline: 10rem;
+			text-align: justify;
 			margin-bottom: 1.5rem;
 			color: var(--secondary);
 		}
