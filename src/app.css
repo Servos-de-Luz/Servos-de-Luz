@@ -19,3 +19,11 @@
 	--primary-focus: #f8b90d20;
 	--primary-inverse: #c7c7c7;
 }
+
+:root {
+	scroll-behavior: smooth;
+
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
+}

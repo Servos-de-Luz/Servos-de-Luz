@@ -9,25 +9,6 @@
 	import instagram from '$lib/assets/icons/instagram.svg';
 	import youtube from '$lib/assets/icons/youtube.svg';
 	import { page } from '$app/stores';
-
-	function preventScroll(event: { preventDefault: () => void; stopPropagation: () => void }) {
-		event.preventDefault();
-		event.stopPropagation();
-	}
-
-	async function scrollTop() {
-		window.addEventListener('wheel', preventScroll, { passive: false });
-		window.addEventListener('touchmove', preventScroll, { passive: false });
-
-		async function scroll() {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		}
-
-		await scroll().then(() => {
-			window.removeEventListener('touchmove', preventScroll);
-			window.removeEventListener('wheel', preventScroll);
-		});
-	}
 </script>
 
 <header>
@@ -35,13 +16,12 @@
 		<ul>
 			<li>
 				{#if $page.url.pathname === '/'}
-					<!-- svelte-ignore a11y-missing-attribute -->
-					<a class="contrast" on:click={scrollTop} on:keypress={scrollTop}>
-						<img src={logo} alt="" id="page-logo" />
+					<a class="contrast" href="#">
+						<img src={logo} alt="Main Page" id="page-logo" />
 					</a>
 				{:else}
 					<a class="contrast" href="/">
-						<img src={logo} alt="" id="page-logo" />
+						<img src={logo} alt="Main Page" id="page-logo" />
 					</a>
 				{/if}
 			</li>
@@ -64,8 +44,10 @@
 
 <slot />
 
-<footer class="container">
-	<br />
+<footer>
+	<div class="container">
+		<br />
+	</div>
 </footer>
 
 <style lang="scss">
@@ -76,10 +58,10 @@
 		background-size: cover;
 	} */
 
-	header {
+	header,
+	footer {
 		background-color: var(--primary);
 		color: var(--primary-inverse);
-		box-shadow: 0px 0px 5px var(--primary-focus);
 		position: sticky;
 		top: 0;
 	}
@@ -91,7 +73,6 @@
 	#page-logo {
 		cursor: pointer;
 		border-radius: 15px;
-		background: radial-gradient(rgba(0, 0, 0, 0.062), transparent);
 		width: 72px;
 
 		&:hover {
