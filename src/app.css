@@ -6,17 +6,14 @@
 [data-theme='light'],
 :root:not([data-theme='dark']) {
 	--font-family: 'Ovo', serif;
-	/* --font-family: 'Source Sans Pro', -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell',
-		'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-		'Noto Color Emoji'; */
 	--secondary: #13217c;
-	--secondary-hover: #13237c;
+	--secondary-hover: #13347c;
 	--secondary-focus: #13217c20;
 	--secondary-inverse: #fff;
 
-	--primary: #f8b90d;
-	--primary-hover: #f8b50d;
-	--primary-focus: #f8b90d20;
+	--primary: #ffc933;
+	--primary-hover: #f9a339;
+	--primary-focus: #f9c63920;
 	--primary-inverse: #c7c7c7;
 }
 
@@ -26,4 +23,9 @@
 	@media (prefers-reduced-motion: reduce) {
 		scroll-behavior: auto;
 	}
+}
+
+h1, h2, h3, h4, p {
+	cursor: text;
+	color: var(--secondary);
 }

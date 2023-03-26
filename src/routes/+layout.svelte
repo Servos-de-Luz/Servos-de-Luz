@@ -11,7 +11,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<header>
+<header id="">
 	<nav class="container">
 		<ul>
 			<li>
@@ -27,7 +27,11 @@
 			</li>
 		</ul>
 		<ul>
-			<li><a href="#" class="nav-link"><img src={whatsapp} alt="Whatsapp Link" /></a></li>
+			<li>
+				<a href="https://chat.whatsapp.com/DpICwCKwV3lCq5igs46hPw" target="_blank" class="nav-link"
+					><img src={whatsapp} alt="Whatsapp Link" /></a
+				>
+			</li>
 			<li>
 				<a href="https://www.instagram.com/servosdeluz" target="_blank" class="nav-link"
 					><img src={instagram} alt="Instagram Link" /></a
@@ -51,15 +55,9 @@
 </footer>
 
 <style lang="scss">
-	/* .hero {
-		background-color: #394046;
-		background-image: url(https://source.unsplash.com/random/1920x1080/?white);
-		background-position: center;
-		background-size: cover;
-	} */
-
 	header,
 	footer {
+		z-index: 15;
 		background-color: var(--primary);
 		color: var(--primary-inverse);
 		position: sticky;
@@ -74,20 +72,21 @@
 		cursor: pointer;
 		border-radius: 15px;
 		width: 72px;
+		transition: 425ms;
 
 		&:hover {
-			transition: 65ms;
-			transform: scale(105%);
+			transition: 425ms;
+			transform: translateY(-2%);
 		}
 	}
 
 	.nav-link {
 		width: 48px;
-		transition: 65ms;
+		transition: 425ms;
 
 		&:hover {
-			transition: 65ms;
-			transform: scale(125%);
+			transition: 425ms;
+			transform: translateY(-2%);
 		}
 	}
 </style>
