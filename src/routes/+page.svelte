@@ -9,16 +9,12 @@
 <title>Servos de Luz, uma comunidade religiosa</title>
 
 <section class="hero">
-	<div class="darkener">
+	<div class="hero-image">
 		<div class="container hero-text">
 			<h1>Servos de Luz</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit metus, accumsan in
-				orci quis, lobortis cursus felis. Aenean bibendum turpis eget laoreet semper. Nulla
-				tincidunt, ante eget blandit eleifend, urna sapien tristique tellus, quis lacinia velit
-				magna ac ex. Donec sed risus libero. Maecenas ac cursus lorem, vitae tincidunt ante. Mauris
-				venenatis lobortis feugiat. Nam diam leo, dapibus ut nisl sit amet, imperdiet lobortis
-				lacus...
+				orci quis, lobortis cursus felis...
 			</p>
 			<a href="/about" role="button" class="secondary">Leia Mais</a>
 		</div>
@@ -60,69 +56,75 @@
 
 <section class="Depoimentos" />
 
-<style lang="scss">
+<style>
 	* {
 		box-sizing: border-box;
 	}
 
+	/* HERO SECTION */
 	section.hero {
-		background-image: url('https://images.unsplash.com/photo-1521728935364-00584c026397?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&w=2600');
+		background: url('https://images.unsplash.com/photo-1521728935364-00584c026397?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&w=2600')
+			center/cover;
+	}
 
-		.darkener {
-			backdrop-filter: blur(5px);
-			background-color: var(--primary-focus);
-		}
+	.hero-image {
+		height: 100vh;
+		position: relative;
+		backdrop-filter: blur(5px);
+		background-color: rgba(0, 0, 0, 0.24);
 	}
 
 	.hero-text {
-		padding-block: 7rem;
+		position: absolute;
+		inset: 10% 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
+		color: var(--secondary-inverse);
+	}
 
-		* {
-			margin-bottom: 1.5rem;
-		}
+	.hero-text h1 {
+		font-size: 3em;
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
 
-		h1 {
-			font-size: 3em;
-			font-weight: 400;
-			color: var(--secondary);
-		}
+	.hero-text p {
+		font-size: larger;
+		padding: 0 12rem;
+		text-align: justify;
+		margin-bottom: 1.5rem;
+	}
 
-		p {
-			padding-inline: 3rem;
-			text-align: justify;
-		}
-
-		@media screen and (min-width: 768px) {
-			p {
-				padding-inline: 10rem;
-			}
+	@media screen and (max-width: 600px) {
+		.hero-text p {
+			padding: 0 1rem;
 		}
 	}
 
-	section.services {
-		h2 {
-			margin-bottom: 1.5rem;
-			color: var(--secondary);
-		}
+	/* SERVICES SECTION */
+	section.services h2 {
+		margin-bottom: 1.5rem;
+		color: var(--secondary);
 	}
 
 	.services-container {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 
-		@media screen and (max-width: 750px) {
+	@media screen and (max-width: 750px) {
+		.services-container {
 			display: block;
 		}
 	}
 
 	.services-container > div {
-		flex: 0 1 45%;
+		flex: 0 1 calc(45% - 20px);
 		margin-bottom: 40px;
-	}
-
-	.service-description > a[role='button'] {
-		align-self: flex-end;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -131,25 +133,27 @@
 		}
 	}
 
-	.service-img {
+	.service-image {
 		border-radius: var(--border-radius);
 		margin-bottom: 0.75rem;
 	}
 
 	.service-description {
-		margin: 0 auto;
+		margin: auto;
+	}
 
-		h3 {
-			margin-bottom: 0.75rem;
-		}
+	.service-description h3 {
+		margin-bottom: 0.75rem;
+	}
 
-		p {
-			text-align: justify;
-		}
+	.service-description p {
+		text-align: justify;
+		margin-bottom: 0.75rem;
+	}
 
-		a {
-			width: 100%;
-			margin-bottom: 0.75rem;
-		}
+	.service-description a {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 0.75rem;
 	}
 </style>
