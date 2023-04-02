@@ -2,12 +2,7 @@
 	import '@picocss/pico';
 	import '../app.css';
 
-	// FIXME: Make logo_sm 5% bigger
 	import logo from '$lib/assets/logo_nobg_sm.webp';
-
-	import whatsapp from '$lib/assets/icons/whatsapp.svg';
-	import instagram from '$lib/assets/icons/instagram.svg';
-	import youtube from '$lib/assets/icons/youtube.svg';
 	import { page } from '$app/stores';
 </script>
 
@@ -27,21 +22,10 @@
 			</li>
 		</ul>
 		<ul>
-			<li>
-				<a href="https://chat.whatsapp.com/DpICwCKwV3lCq5igs46hPw" target="_blank" class="nav-link"
-					><img src={whatsapp} alt="Whatsapp Link" /></a
-				>
-			</li>
-			<li>
-				<a href="https://www.instagram.com/servosdeluz" target="_blank" class="nav-link"
-					><img src={instagram} alt="Instagram Link" /></a
-				>
-			</li>
-			<li>
-				<a href="https://www.youtube.com/@ServosdeLuz" target="_blank" class="nav-link"
-					><img src={youtube} alt="Youtube Link" /></a
-				>
-			</li>
+			<li><a class="contrast nav-link" href="/about">Sobre Nós</a></li>
+			<li><a class="contrast nav-link" href="/roda-de-cura">Roda de Cura</a></li>
+			<li><a class="contrast nav-link" href="/roda-de-cura">Dallet</a></li>
+			<li><a class="contrast nav-link" href="/contact">Contate-nos</a></li>
 		</ul>
 	</nav>
 </header>
@@ -54,14 +38,14 @@
 	</div>
 </footer>
 
-<style lang="scss">
-	header,
-	footer {
+<style>
+	header {
 		z-index: 15;
 		background-color: var(--primary);
 		color: var(--primary-inverse);
-		position: sticky;
+		position: fixed;
 		top: 0;
+		width: 100%;
 	}
 
 	header * {
@@ -72,21 +56,16 @@
 		cursor: pointer;
 		border-radius: 15px;
 		width: 72px;
-		transition: 425ms;
+		transition: transform 425ms;
+	}
 
-		&:hover {
-			transition: 425ms;
-			transform: translateY(-2%);
-		}
+	#page-logo:hover,
+	.nav-link:hover {
+		transform: translateY(-2%);
+		transition: transform 425ms;
 	}
 
 	.nav-link {
-		width: 48px;
-		transition: 425ms;
-
-		&:hover {
-			transition: 425ms;
-			transform: translateY(-2%);
-		}
+		transition: transform 425ms;
 	}
 </style>
