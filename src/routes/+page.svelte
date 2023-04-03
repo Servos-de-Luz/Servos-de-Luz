@@ -98,7 +98,7 @@
 		margin-bottom: 1.5rem;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 900px) {
 		.hero-text p {
 			padding: 0 1rem;
 		}
