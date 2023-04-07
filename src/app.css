@@ -11,8 +11,8 @@
 	--secondary-focus: #13217c20;
 	--secondary-inverse: #fff;
 
-	--primary: #ffc933;
-	--primary-hover: #f9a339;
+	--primary: #ffb833;
+	--primary-hover: #ff821c;
 	--primary-focus: #f9c63920;
 	--primary-inverse: #ffffff;
 }
@@ -28,4 +28,8 @@
 h1, h2, h3, h4, p {
 	cursor: text;
 	color: var(--secondary);
+}
+
+a:hover {
+	text-decoration: underline;
 }

@@ -10,7 +10,7 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="A página principal da Servos de Luz, com a ideia geral de quem somos."
+		content="A página principal da Servos de Luz, a porta de entrada de nossa comunidade religiosa."
 	/>
 </svelte:head>
 <title>Servos de Luz, uma comunidade religiosa</title>
@@ -19,7 +19,7 @@
 	<div class="hero-image">
 		<div class="container hero-text">
 			<h1>Servos de Luz</h1>
-			<p>Uma nova era de mediunidade.</p>
+			<p>Uma nova era de mediunidade em Brasília.</p>
 			<ul class="contacts">
 				<li class="contact">
 					<a href="https://www.instagram.com/servosdeluz/" target="_blank" rel="noopener noreferrer"
@@ -69,11 +69,11 @@
 			<div>
 				<img class="service-img" src="https://source.unsplash.com/random/500x500/?A" alt="" />
 				<div class="service-description">
-					<h3>Serviço 2</h3>
+					<h3>Dallet</h3>
 					<p>
-						Morbi tristique senectus et netus. Consectetur lorem donec massa sapien faucibus et
-						molestie. Aliquet eget sit amet tellus cras adipiscing enim eu. Venenatis tellus in
-						metus vulputate eu.
+						Uma ferramenta de crescimento, no autodesenvolvimento e evolução do físico, emocional,
+						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em
+						todas os aspectos na vida.
 					</p>
 					<a role="button" class="outline secondary" href="/roda-de-cura">Saiba Mais</a>
 				</div>
@@ -288,6 +288,10 @@
 	}
 
 	@media screen and (max-width: 1200px) {
+		.depoimentos h2 {
+			margin-bottom: 1rem;
+		}
+
 		.depoimento p {
 			padding: 0 1rem;
 		}

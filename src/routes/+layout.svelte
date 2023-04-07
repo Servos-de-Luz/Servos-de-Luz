@@ -13,7 +13,10 @@
 	 */
 	function clickOutside(node) {
 		const handleClick = (/** @type {any} */ event) => {
-			if (!node.contains(event.target)) {
+			if (
+				!node.contains(event.target) &&
+				!document.getElementById('burger-button')?.contains(event.target)
+			) {
 				node.dispatchEvent(new CustomEvent('outclick'));
 			}
 		};
@@ -28,7 +31,7 @@
 	}
 
 	function toggleBurgerNav() {
-		open = true;
+		open = !open;
 	}
 </script>
 
@@ -49,6 +52,7 @@
 		</ul>
 
 		<div
+			id="burger-button"
 			class="burger-button nav-area"
 			role="button"
 			aria-roledescription="Opens the navigation"
@@ -91,6 +95,7 @@
 	}
 
 	header * {
+		font-size: 18pt;
 		color: var(--primary-inverse);
 	}
 
@@ -126,15 +131,14 @@
 			display: flex;
 			flex-direction: column;
 			position: fixed;
-			top: 5.25em;
+			top: 10%;
 			right: 0;
 			padding: 0 30px 0 25px;
 			border-radius: 0 0 var(--border-radius) var(--border-radius);
 		}
 
 		.burger-button {
-			height: fit-content;
-			display: block;
+			display: flex;
 			margin: auto 0;
 		}
 	}
