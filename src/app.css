@@ -6,7 +6,7 @@
 [data-theme='light'],
 :root:not([data-theme='dark']) {
 	--font-family: 'Ovo', serif;
-	--secondary: #13217c;
+	--secondary: #252b50;
 	--secondary-hover: #13347c;
 	--secondary-focus: #13217c20;
 	--secondary-inverse: #fff;

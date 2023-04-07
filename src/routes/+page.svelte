@@ -1,3 +1,12 @@
+<script>
+	import Carousel from 'svelte-carousel';
+	import instagram from '$lib/assets/icons/instagram.svg';
+	import whatsapp from '$lib/assets/icons/whatsapp.svg';
+	import youtube from '$lib/assets/icons/youtube.svg';
+	import telegram from '$lib/assets/icons/telegram.svg';
+	import { browser } from '$app/environment';
+</script>
+
 <svelte:head>
 	<meta
 		name="description"
@@ -10,11 +19,32 @@
 	<div class="hero-image">
 		<div class="container hero-text">
 			<h1>Servos de Luz</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit metus, accumsan in
-				orci quis, lobortis cursus felis...
-			</p>
-			<a href="/about" role="button" class="secondary">Leia Mais</a>
+			<p>Uma nova era de mediunidade.</p>
+			<ul class="contacts">
+				<li class="contact">
+					<a href="https://www.instagram.com/servosdeluz/" target="_blank" rel="noopener noreferrer"
+						><img src={instagram} alt="link para o instagram" /></a
+					>
+				</li>
+				<li class="contact">
+					<a href="http://" target="_blank" rel="noopener noreferrer"
+						><img src={whatsapp} alt="link para o whatsapp" /></a
+					>
+				</li>
+				<li class="contact">
+					<a href="https://t.me/servosdeluzz" target="_blank" rel="noopener noreferrer"
+						><img src={telegram} alt="link para o whatsapp" /></a
+					>
+				</li>
+				<li class="contact">
+					<a
+						href="https://www.youtube.com/channel/UCI8mUUSl4HDviPwYz7MWdpA"
+						target="_blank"
+						rel="noopener noreferrer"><img src={youtube} alt="link para o youtube" /></a
+					>
+				</li>
+			</ul>
+			<a href="/about" role="button" class="secondary">Quem Somos</a>
 		</div>
 	</div>
 </section>
@@ -52,7 +82,51 @@
 	</div>
 </section>
 
-<section class="Depoimentos" />
+<section class="depoimentos">
+	<div class="container">
+		<h2>Depoimentos</h2>
+		<div class="depoimentos-container">
+			{#if browser}
+				<Carousel>
+					<div class="depoimento">
+						<p>
+							Ontem eu estava com tantas dores no corpo, uma tremedeira, mal estar e a medida que
+							foi iniciado o decreto, fui melhorando e quando finalizou que bebi a água... senti um
+							alívio enorme e a dor passou. Muito bom e vamos seguindo nesse processo de cura e
+							despertar espiritual. Obrigada <a
+								href="https://www.instagram.com/servosdeluz/"
+								target="_blank"
+								rel="noopener noreferrer">@servosdeluz</a
+							>.
+
+							<br />
+							-
+							<a
+								href="https://www.instagram.com/stories/highlights/17895965026679372/"
+								target="_blank"
+								rel="noopener noreferrer">mamelo3574</a
+							>
+						</p>
+					</div>
+					<div class="depoimento">
+						<p>
+							Amém, gratidão!! Realmente o evangelho do lar dos servos de luz é maravilhoso!! Eu ja
+							o faço há uns 4 meses, como as coisas mudaram em minha vida, sou muito grata a Jesus ,
+							a Regina e aos servos de luz!!!
+							<br />
+							-
+							<a
+								href="https://www.instagram.com/stories/highlights/18047196073167733/"
+								target="_blank"
+								rel="noopener noreferrer">Anônimo</a
+							>
+						</p>
+					</div>
+				</Carousel>
+			{/if}
+		</div>
+	</div>
+</section>
 
 <style>
 	* {
@@ -100,6 +174,36 @@
 		.hero-text p {
 			padding: 0 1rem;
 		}
+	}
+
+	.contacts {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		width: 10em;
+	}
+
+	.contact {
+		border-radius: 100%;
+		list-style: none;
+		transition: 200ms;
+	}
+
+	.contact:hover {
+		transition: 200ms;
+		transform: scale(1.3);
+		background-color: var(--primary);
+	}
+
+	.contact a {
+		display: flex;
+		align-items: center;
+		color: var(--secondary-inverse);
+	}
+
+	.contact a img {
+		height: 32px;
+		width: 32px;
 	}
 
 	/* SERVICES SECTION */
@@ -153,5 +257,39 @@
 		display: inline-block;
 		width: 100%;
 		margin-bottom: 0.75rem;
+	}
+
+	/* Depoimentos */
+
+	.depoimentos {
+		padding-top: 1.5rem;
+		margin-bottom: 0;
+		background-color: var(--secondary);
+	}
+
+	.depoimentos h2 {
+		margin: 0;
+		color: var(--secondary-inverse);
+	}
+
+	.depoimento {
+		display: flex;
+		align-items: center;
+		padding: 15px;
+		min-height: 350px;
+	}
+
+	.depoimento p {
+		color: var(--secondary-inverse);
+		font-size: larger;
+		margin: 0;
+		padding: 0 6rem;
+		text-align: justify;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.depoimento p {
+			padding: 0 1rem;
+		}
 	}
 </style>
