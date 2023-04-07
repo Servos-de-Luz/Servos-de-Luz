@@ -66,7 +66,7 @@
 		>
 			<li><a class="contrast nav-link" href="/about">Sobre Nós</a></li>
 			<li><a class="contrast nav-link" href="/roda-de-cura">Roda de Cura</a></li>
-			<li><a class="contrast nav-link" href="/roda-de-cura">Dallet</a></li>
+			<li><a class="contrast nav-link" href="/dallet">Dallet</a></li>
 			<li><a class="contrast nav-link" href="/contact">Contate-nos</a></li>
 		</ul>
 	</nav>
@@ -126,7 +126,7 @@
 			display: flex;
 			flex-direction: column;
 			position: fixed;
-			top: 6.25em;
+			top: 5.25em;
 			right: 0;
 			padding: 0 30px 0 25px;
 			border-radius: 0 0 var(--border-radius) var(--border-radius);

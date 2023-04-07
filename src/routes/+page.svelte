@@ -1,11 +1,9 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="A página principal da Servos de Luz, com todos os links para nossas redes sociais e principais
-	produtos."
+		content="A página principal da Servos de Luz, com a ideia geral de quem somos."
 	/>
 </svelte:head>
-<!-- TODO: Definir um titulo descritivo para a página -->
 <title>Servos de Luz, uma comunidade religiosa</title>
 
 <section class="hero">
@@ -133,7 +131,7 @@
 		}
 	}
 
-	.service-image {
+	.service-img {
 		border-radius: var(--border-radius);
 		margin-bottom: 0.75rem;
 	}
