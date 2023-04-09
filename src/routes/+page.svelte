@@ -4,6 +4,7 @@
 	import whatsapp from '$lib/assets/icons/whatsapp.svg';
 	import youtube from '$lib/assets/icons/youtube.svg';
 	import telegram from '$lib/assets/icons/telegram.svg';
+	import chakra from '$lib/assets/chakra.webp';
 	import { browser } from '$app/environment';
 </script>
 
@@ -44,7 +45,7 @@
 					>
 				</li>
 			</ul>
-			<a href="/about" role="button" class="secondary">Quem Somos</a>
+			<a href="/about" role="button" class="primary">Quem Somos</a>
 		</div>
 	</div>
 </section>
@@ -62,20 +63,20 @@
 						cura espiritual, mental e física. Momento de abrir o coração, deixando ir todas as dores
 						e vivenciar as forças do Sagrado.
 					</p>
-					<a role="button" class="outline secondary" href="/roda-de-cura">Saiba Mais</a>
+					<a role="button" class="outline" href="/roda-de-cura">Saiba Mais</a>
 				</div>
 			</div>
 
 			<div>
-				<img class="service-img" src="https://source.unsplash.com/random/500x500/?A" alt="" />
+				<img class="service-img" src={chakra} alt="" />
 				<div class="service-description">
-					<h3>Dallet</h3>
+					<h3>Dalet</h3>
 					<p>
 						Uma ferramenta de crescimento, no autodesenvolvimento e evolução do físico, emocional,
 						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em
 						todas os aspectos na vida.
 					</p>
-					<a role="button" class="outline secondary" href="/roda-de-cura">Saiba Mais</a>
+					<a role="button" class="outline" href="/dalet">Saiba Mais</a>
 				</div>
 			</div>
 		</div>
@@ -89,7 +90,7 @@
 			{#if browser}
 				<Carousel>
 					<div class="depoimento">
-						<p>
+						<cite>
 							Ontem eu estava com tantas dores no corpo, uma tremedeira, mal estar e a medida que
 							foi iniciado o decreto, fui melhorando e quando finalizou que bebi a água... senti um
 							alívio enorme e a dor passou. Muito bom e vamos seguindo nesse processo de cura e
@@ -106,10 +107,10 @@
 								target="_blank"
 								rel="noopener noreferrer">mamelo3574</a
 							>
-						</p>
+						</cite>
 					</div>
 					<div class="depoimento">
-						<p>
+						<cite>
 							Amém, gratidão!! Realmente o evangelho do lar dos servos de luz é maravilhoso!! Eu ja
 							o faço há uns 4 meses, como as coisas mudaram em minha vida, sou muito grata a Jesus ,
 							a Regina e aos servos de luz!!!
@@ -120,7 +121,23 @@
 								target="_blank"
 								rel="noopener noreferrer">Anônimo</a
 							>
-						</p>
+						</cite>
+					</div>
+					<div class="depoimento">
+						<cite>
+							Eu fiz o mesmo no evangelho do dia 02/12... coloquei que queria um trabalho até 20/12,
+							pois queria começar o ano trabalhando. Hoje depois de 6 meses desempregada recebi um
+							resposta positiva e começo a trabalhar segunda-feira. Obrigada Re e todos do servo de
+							luz por nos ajudar a não desistir e por todos os ensinamentos... sou muito muito
+							Grata!!!!!!
+							<br />
+							-
+							<a
+								href="https://www.instagram.com/stories/highlights/17876774128486047/"
+								target="_blank"
+								rel="noopener noreferrer">Anônimo</a
+							>
+						</cite>
 					</div>
 				</Carousel>
 			{/if}
@@ -279,9 +296,9 @@
 		min-height: 350px;
 	}
 
-	.depoimento p {
+	.depoimento cite {
 		color: var(--secondary-inverse);
-		font-size: larger;
+		font-size: 16pt;
 		margin: 0;
 		padding: 0 6rem;
 		text-align: justify;
@@ -292,7 +309,7 @@
 			margin-bottom: 1rem;
 		}
 
-		.depoimento p {
+		.depoimento cite {
 			padding: 0 1rem;
 		}
 	}

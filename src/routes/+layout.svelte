@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import '@picocss/pico';
 	import '../app.css';
 
@@ -6,13 +8,15 @@
 	import logo from '$lib/assets/logo_nobg_sm.webp';
 	import { page } from '$app/stores';
 
-	let open = false;
+	let isBurgerOpen = false;
+	let oldYPos = 0;
+	let y = 0;
 
 	/**
 	 * @param {any} node
 	 */
 	function clickOutside(node) {
-		const handleClick = (/** @type {any} */ event) => {
+		const handleClick = (/** @type {any} **/ event) => {
 			if (
 				!node.contains(event.target) &&
 				!document.getElementById('burger-button')?.contains(event.target)
@@ -31,11 +35,27 @@
 	}
 
 	function toggleBurgerNav() {
-		open = !open;
+		isBurgerOpen = !isBurgerOpen;
+	}
+
+	function shouldShowHeader(actualYPos) {
+		if (actualYPos <= 150) {
+			return true;
+		}
+
+		if (actualYPos < oldYPos) {
+			oldYPos = actualYPos;
+			return true;
+		}
+
+		oldYPos = actualYPos;
+		return false;
 	}
 </script>
 
-<header id="">
+<svelte:window bind:scrollY={y} />
+
+<header class:hidden={!shouldShowHeader(y)}>
 	<nav class="container">
 		<ul>
 			<li>
@@ -53,11 +73,12 @@
 
 		<div
 			id="burger-button"
-			class="burger-button nav-area"
+			class="burger-button nav-area secondary"
 			role="button"
 			aria-roledescription="Opens the navigation"
 			on:click={toggleBurgerNav}
 			on:keydown={toggleBurgerNav}
+			tabindex="0"
 		>
 			<img src={burger} alt="Burger Button" />
 		</div>
@@ -65,13 +86,12 @@
 		<ul
 			class="nav-links nav-area"
 			use:clickOutside
-			on:outclick={() => (open = false)}
-			class:active={open}
+			on:outclick={() => (isBurgerOpen = false)}
+			class:active={isBurgerOpen}
 		>
-			<li><a class="contrast nav-link" href="/about">Sobre Nós</a></li>
-			<li><a class="contrast nav-link" href="/roda-de-cura">Roda de Cura</a></li>
-			<li><a class="contrast nav-link" href="/dallet">Dallet</a></li>
-			<li><a class="contrast nav-link" href="/contact">Contate-nos</a></li>
+			<li><a class="nav-link" href="/about">Sobre Nós</a></li>
+			<li><a class="nav-link" href="/roda-de-cura">Roda de Cura</a></li>
+			<li><a class="nav-link" href="/dalet">Dalet</a></li>
 		</ul>
 	</nav>
 </header>
@@ -80,22 +100,37 @@
 
 <footer>
 	<div class="container">
-		<br />
+		<div class="brand">Servos de Luz</div>
+		<div class="copyright">
+			© {new Date().getFullYear()} Servos de Luz. Todos os direitos reservados.
+		</div>
+		<nav class="links">
+			<ul>
+				<li><a class="nav-link" href="/about">Sobre Nós</a></li>
+				<li><a class="nav-link" href="/roda-de-cura">Roda de Cura</a></li>
+				<li><a class="nav-link" href="/dalet">Dalet</a></li>
+			</ul>
+		</nav>
 	</div>
 </footer>
 
 <style>
 	header {
 		z-index: 15;
-		background-color: var(--primary);
+		background-color: var(--secondary);
 		color: var(--primary-inverse);
 		position: fixed;
 		top: 0;
 		width: 100%;
+
+		transition: 250ms;
+	}
+
+	header.hidden {
+		transform: translateY(-100%);
 	}
 
 	header * {
-		font-size: 18pt;
 		color: var(--primary-inverse);
 	}
 
@@ -127,19 +162,52 @@
 		}
 
 		.nav-links.active {
-			background-color: var(--primary);
+			background-color: var(--secondary);
 			display: flex;
 			flex-direction: column;
 			position: fixed;
 			top: 10%;
-			right: 0;
+			right: 3.6%;
 			padding: 0 30px 0 25px;
-			border-radius: 0 0 var(--border-radius) var(--border-radius);
+			border-radius: var(--border-radius);
 		}
 
 		.burger-button {
 			display: flex;
 			margin: auto 0;
 		}
+	}
+
+	footer {
+		background-color: var(--secondary);
+	}
+
+	footer * {
+		color: var(--primary-inverse);
+	}
+
+	footer .container {
+		padding: 5rem 10rem;
+		padding-bottom: 1rem;
+		margin: 0 auto;
+		max-width: 1560px;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	footer .brand {
+		font-size: 2rem;
+	}
+
+	footer .copyright {
+		font-size: 1rem;
+	}
+
+	footer .links ul {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		list-style: none;
 	}
 </style>
