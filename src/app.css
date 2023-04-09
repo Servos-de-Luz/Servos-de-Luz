@@ -7,7 +7,7 @@
 :root:not([data-theme='dark']) {
 	--font-family: 'Ovo', serif;
 	--secondary: #252b50;
-	--secondary-hover: #13347c;
+	--secondary-hover: #222749;
 	--secondary-focus: #13217c20;
 	--secondary-inverse: #fff;
 
@@ -25,11 +25,27 @@
 	}
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
 	cursor: text;
 	color: var(--secondary);
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+.empty {
+	height: 11.5vh;
+}
+
+strong.primary {
+	color: var(--primary);
+}
+
+strong.secondary {
+	color: var(--secondary);
 }
