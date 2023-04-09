@@ -187,8 +187,7 @@
 	}
 
 	footer .container {
-		padding: 5rem 10rem;
-		padding-bottom: 1rem;
+		padding: 5rem 10rem 1rem 10rem;
 		margin: 0 auto;
 		max-width: 1560px;
 		display: flex;
@@ -209,5 +208,12 @@
 		flex-direction: column;
 		align-items: baseline;
 		list-style: none;
+	}
+
+	@media (max-width: 900px) {
+		footer .container {
+			flex-direction: column;
+			padding: 2rem 2rem 1rem 2rem;
+		}
 	}
 </style>

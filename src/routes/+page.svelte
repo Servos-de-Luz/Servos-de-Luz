@@ -88,7 +88,7 @@
 		<h2>Depoimentos</h2>
 		<div class="depoimentos-container">
 			{#if browser}
-				<Carousel>
+				<Carousel autoplay autoplayDuration={10000}>
 					<div class="depoimento">
 						<cite>
 							Ontem eu estava com tantas dores no corpo, uma tremedeira, mal estar e a medida que
