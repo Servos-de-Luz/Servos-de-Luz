@@ -39,7 +39,7 @@
 	}
 
 	function shouldShowHeader(actualYPos) {
-		if (actualYPos <= 150) {
+		if (actualYPos <= 100) {
 			return true;
 		}
 
