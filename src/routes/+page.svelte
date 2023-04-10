@@ -28,8 +28,10 @@
 					>
 				</li>
 				<li class="contact">
-					<a href="https://chat.whatsapp.com/DpICwCKwV3lCq5igs46hPw" target="_blank" rel="noopener noreferrer"
-						><img src={whatsapp} alt="link para o whatsapp" /></a
+					<a
+						href="https://chat.whatsapp.com/DpICwCKwV3lCq5igs46hPw"
+						target="_blank"
+						rel="noopener noreferrer"><img src={whatsapp} alt="link para o whatsapp" /></a
 					>
 				</li>
 				<li class="contact">
@@ -224,6 +226,7 @@
 	}
 
 	/* SERVICES SECTION */
+
 	section.services h2 {
 		margin-bottom: 1.5rem;
 		color: var(--secondary);
@@ -276,17 +279,10 @@
 		margin-bottom: 0.75rem;
 	}
 
-	/* Depoimentos */
-
-	.depoimentos {
-		padding-top: 1.5rem;
-		margin-bottom: 0;
-		background-color: var(--secondary);
-	}
+	/* DEPOIMENTOS SECTION */
 
 	.depoimentos h2 {
 		margin: 0;
-		color: var(--secondary-inverse);
 	}
 
 	.depoimento {
@@ -297,10 +293,9 @@
 	}
 
 	.depoimento cite {
-		color: var(--secondary-inverse);
 		font-size: 16pt;
 		margin: 0;
-		padding: 0 6rem;
+		padding: 0rem 6rem;
 		text-align: justify;
 	}
 

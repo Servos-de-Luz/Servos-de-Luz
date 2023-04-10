@@ -2,7 +2,7 @@
 	import rejane from '$lib/assets/rejane.webp';
 </script>
 
-<div class="empty" />
+<section class="empty" />
 <section class="about">
 	<div class="container">
 		<h1>Sobre Nós</h1>
