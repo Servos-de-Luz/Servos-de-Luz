@@ -5,6 +5,7 @@
 	import youtube from '$lib/assets/icons/youtube.svg';
 	import telegram from '$lib/assets/icons/telegram.svg';
 	import chakra from '$lib/assets/chakra.webp';
+	import roda from '$lib/assets/roda.webp';
 	import { browser } from '$app/environment';
 </script>
 
@@ -57,7 +58,7 @@
 		<h2>Nossos Serviços</h2>
 		<div class="services-container">
 			<div>
-				<img class="service-img" src="https://source.unsplash.com/random/500x500/?a" alt="" />
+				<img class="service-img" src={roda} alt="" />
 				<div class="service-description">
 					<h3>Roda de Cura</h3>
 					<p>
