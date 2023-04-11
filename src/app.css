@@ -6,7 +6,8 @@
 [data-theme='light'],
 :root:not([data-theme='dark']) {
 	--font-family: 'Ovo', serif;
-	--secondary: #252b50;
+	--secondary: #002077;
+	--secondary-alt: #252b50;
 	--secondary-hover: #222749;
 	--secondary-focus: #13217c20;
 	--secondary-inverse: #fff;
@@ -31,7 +32,7 @@ h3,
 h4,
 p {
 	cursor: text;
-	color: var(--secondary);
+	color: var(--secondary-alt);
 }
 
 a:hover {
