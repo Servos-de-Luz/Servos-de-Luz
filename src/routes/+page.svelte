@@ -73,7 +73,34 @@
 			<div>
 				<img class="service-img" src={chakra} alt="" />
 				<div class="service-description">
-					<h3>Dalet</h3>
+					<h3>Gravações Dalet</h3>
+					<p>
+						Uma ferramenta de crescimento, no autodesenvolvimento e evolução do físico, emocional,
+						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em
+						todas os aspectos na vida.
+					</p>
+					<a role="button" class="outline" href="/dalet">Saiba Mais</a>
+				</div>
+			</div>
+		</div>
+		<div class="services-container">
+			<div>
+				<img class="service-img" src={roda} alt="" />
+				<div class="service-description">
+					<h3>Rosas Sagradas</h3>
+					<p>
+						A Roda de Cura Sagrada é uma cerimônia onde os participantes se reúnem para receberem a
+						cura espiritual, mental e física. Momento de abrir o coração, deixando ir todas as dores
+						e vivenciar as forças do Sagrado.
+					</p>
+					<a role="button" class="outline" href="/roda-de-cura">Saiba Mais</a>
+				</div>
+			</div>
+
+			<div>
+				<img class="service-img" src={chakra} alt="" />
+				<div class="service-description">
+					<h3>Outros Cursos</h3>
 					<p>
 						Uma ferramenta de crescimento, no autodesenvolvimento e evolução do físico, emocional,
 						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em

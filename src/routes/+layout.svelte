@@ -91,6 +91,8 @@
 		>
 			<li><a class="nav-link" href="/about">Sobre Nós</a></li>
 			<li><a class="nav-link" href="/roda-de-cura">Roda de Cura</a></li>
+			<li><a class="nav-link" href="/rosas-sagradas">Rosas Sagradas</a></li>
+			<li><a class="nav-link" href="/cursos">Cursos</a></li>
 			<li><a class="nav-link" href="/dalet">Dalet</a></li>
 		</ul>
 	</nav>
