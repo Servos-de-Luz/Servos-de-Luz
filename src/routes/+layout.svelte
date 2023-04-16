@@ -110,6 +110,8 @@
 			<ul>
 				<li><a class="nav-link" href="/about">Sobre Nós</a></li>
 				<li><a class="nav-link" href="/roda-de-cura">Roda de Cura</a></li>
+				<li><a class="nav-link" href="/rosas-sagradas">Rosas Sagradas</a></li>
+				<li><a class="nav-link" href="/cursos">Cursos</a></li>
 				<li><a class="nav-link" href="/dalet">Dalet</a></li>
 			</ul>
 		</nav>
@@ -189,7 +191,7 @@
 	}
 
 	footer .container {
-		padding: 5rem 10rem 1rem 10rem;
+		padding: 5rem 8rem 1rem 8rem;
 		margin: 0 auto;
 		max-width: 1560px;
 		display: flex;
@@ -206,8 +208,8 @@
 	}
 
 	footer .links ul {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		align-items: baseline;
 		list-style: none;
 	}
@@ -215,7 +217,12 @@
 	@media (max-width: 900px) {
 		footer .container {
 			flex-direction: column;
+			gap: 15px;
 			padding: 2rem 2rem 1rem 2rem;
+		}
+
+		footer .links ul {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
