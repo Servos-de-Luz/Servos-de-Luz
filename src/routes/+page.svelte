@@ -16,8 +16,8 @@
 		name="description"
 		content="A página principal da Servos de Luz, a porta de entrada de nossa comunidade religiosa."
 	/>
+	<title>Servos de Luz, uma comunidade religiosa</title>
 </svelte:head>
-<title>Servos de Luz, uma comunidade religiosa</title>
 
 <section class="hero">
 	<div class="hero-image">

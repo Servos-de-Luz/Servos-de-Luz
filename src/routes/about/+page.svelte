@@ -2,6 +2,10 @@
 	import rejane from '$lib/assets/rejane.webp';
 </script>
 
+<svelte:head>
+	<title>Sobre Nós</title>
+</svelte:head>
+
 <section class="empty" />
 
 <section class="founder">
@@ -24,11 +28,19 @@
 				Iniciei a Caminhada com os SERVOS DE LUZ em 2017, recebendo os guias amigos espirituais
 				Gabriel, Ísis e Akim! Iniciamos os encontros do Evangelho de Luz todas as segundas-feiras!
 				Com o mentor espiritual AKIM, iniciei os estudos e projetos para a Gravação DALET🌀
-				@ressonantesdalet.
+				<a
+					href="https://www.instagram.com/ressonantesdalet"
+					target="_blank"
+					rel="noopener noreferrer">@ressonantesdalet</a
+				>.
 			</p>
 			<p>
 				Em 2020 iniciamos a prática espiritual presencial e em 2021 a Roda de Cura Sagrada💚
-				@rodadecura.sagrada.
+				<a
+					href="https://www.instagram.com/rodadecura.sagrada/"
+					target="_blank"
+					rel="noopener noreferrer">@rodadecura.sagrada</a
+				>.
 			</p>
 			<p>
 				Em 2022, iniciei a Caminhada das Rosas com estudo para iniciação das Servas de Madalena. O
@@ -41,7 +53,15 @@
 			<p>
 				E atualmente nas redes sociais ministrando palestras e cursos para o autodesenvolvimento e
 				evolução espiritual! Sejam bem-vindos nessa caminhada de amor com os Servos de Luz 💙🌀
-				@servosdeluz e as @rosas_sagradas 🌹
+				<a href="https://www.instagram.com/servosdeluz/" target="_blank" rel="noopener noreferrer"
+					>@servosdeluz</a
+				>
+				e as
+				<a
+					href="https://www.instagram.com/rosas_sagradas/"
+					target="_blank"
+					rel="noopener noreferrer">@rosas_sagradas</a
+				> 🌹.
 			</p>
 
 			<p>

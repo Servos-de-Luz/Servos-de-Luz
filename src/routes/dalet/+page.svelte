@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Servos de Luz - Gravações Dalet</title>
+	<title>Gravações Dalet</title>
 </svelte:head>
 
 <section class="empty" />

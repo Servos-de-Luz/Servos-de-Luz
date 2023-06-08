@@ -26,6 +26,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Roda de Cura</title>
+</svelte:head>
+
+
 <div class="empty" />
 
 <section class="map">

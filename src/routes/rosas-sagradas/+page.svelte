@@ -1,6 +1,10 @@
 <script>
 </script>
 
+<svelte:head>
+	<title>Rosas Sagradas</title>
+</svelte:head>
+
 <section class="empty" />
 
 <section>
