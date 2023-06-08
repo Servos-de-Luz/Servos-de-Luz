@@ -78,6 +78,12 @@
 </section>
 
 <style>
+	@media (max-width: 900px) {
+		section {
+			padding-inline: 25px;
+		}
+	}
+
 	.about .container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
