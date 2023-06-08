@@ -100,6 +100,12 @@
 </section>
 
 <style>
+	@media (max-width: 900px) {
+		section {
+			padding-inline: 25px;
+		}
+	}
+
 	h2 {
 		margin-bottom: 1rem;
 	}

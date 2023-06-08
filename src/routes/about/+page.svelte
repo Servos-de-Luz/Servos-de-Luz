@@ -135,12 +135,17 @@
 	}
 
 	@media (max-width: 900px) {
+		section {
+			padding-inline: 25px;
+		}
+
 		.founder .container {
 			gap: 0;
 			flex-direction: column;
 		}
 
 		.founder-img {
+			margin-top: 24px;
 			border-radius: var(--border-radius);
 			width: 100%;
 		}
