@@ -49,6 +49,7 @@
 		}
 
 		oldYPos = actualYPos;
+		
 		return false;
 	}
 </script>
@@ -60,7 +61,7 @@
 		<ul>
 			<li>
 				{#if $page.url.pathname === '/'}
-					<a class="contrast" href="#">
+					<a class="contrast" href="#top">
 						<img src={logo} alt="Main Page" id="page-logo" />
 					</a>
 				{:else}

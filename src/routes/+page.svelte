@@ -6,6 +6,8 @@
 	import telegram from '$lib/assets/icons/telegram.svg';
 	import chakra from '$lib/assets/chakra.webp';
 	import roda from '$lib/assets/roda.webp';
+	import rosas from '$lib/assets/rosas.webp';
+	import cursos from '$lib/assets/cursos.webp';
 	import { browser } from '$app/environment';
 </script>
 
@@ -85,7 +87,7 @@
 		</div>
 		<div class="services-container">
 			<div>
-				<img class="service-img" src={roda} alt="" />
+				<img class="service-img" src={rosas} alt="" />
 				<div class="service-description">
 					<h3>Rosas Sagradas</h3>
 					<p>
@@ -93,12 +95,12 @@
 						cura espiritual, mental e física. Momento de abrir o coração, deixando ir todas as dores
 						e vivenciar as forças do Sagrado.
 					</p>
-					<a role="button" class="outline" href="/roda-de-cura">Saiba Mais</a>
+					<a role="button" class="outline" href="/rosas-sagradas">Saiba Mais</a>
 				</div>
 			</div>
 
 			<div>
-				<img class="service-img" src={chakra} alt="" />
+				<img class="service-img" src={cursos} alt="" />
 				<div class="service-description">
 					<h3>Outros Cursos</h3>
 					<p>
@@ -106,7 +108,7 @@
 						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em
 						todas os aspectos na vida.
 					</p>
-					<a role="button" class="outline" href="/dalet">Saiba Mais</a>
+					<a role="button" class="outline" href="/cursos">Saiba Mais</a>
 				</div>
 			</div>
 		</div>
@@ -201,20 +203,23 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		color: var(--secondary-inverse);
-	}
 
-	.hero-text h1 {
-		font-size: 3em;
-		font-weight: 400;
-		margin-bottom: 1.5rem;
-	}
+		& h1 {
+			font-size: 3em;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+			text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+			color: var(--secondary-inverse);
+		}
 
-	.hero-text p {
-		font-size: larger;
-		padding: 0 12rem;
-		text-align: justify;
-		margin-bottom: 1.5rem;
+		& p {
+			font-size: larger;
+			padding: 0 12rem;
+			text-align: justify;
+			margin-bottom: 1.5rem;
+			text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+			color: var(--secondary-inverse);
+		}
 	}
 
 	@media screen and (max-width: 900px) {
@@ -234,12 +239,12 @@
 		border-radius: 100%;
 		list-style: none;
 		transition: 200ms;
-	}
 
-	.contact:hover {
-		transition: 200ms;
-		transform: scale(1.3);
-		background-color: var(--primary);
+		&:hover {
+			transition: 200ms;
+			transform: scale(1.3);
+			background-color: var(--primary);
+		}
 	}
 
 	.contact a {
@@ -290,21 +295,21 @@
 
 	.service-description {
 		margin: auto;
-	}
 
-	.service-description h3 {
-		margin-bottom: 0.75rem;
-	}
+		& h3 {
+			margin-bottom: 0.75rem;
+		}
 
-	.service-description p {
-		text-align: justify;
-		margin-bottom: 0.75rem;
-	}
+		& p {
+			text-align: justify;
+			margin-bottom: 0.75rem;
+		}
 
-	.service-description a {
-		display: inline-block;
-		width: 100%;
-		margin-bottom: 0.75rem;
+		& a {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 0.75rem;
+		}
 	}
 
 	/* DEPOIMENTOS SECTION */
