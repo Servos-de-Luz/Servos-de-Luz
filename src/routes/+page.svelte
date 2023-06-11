@@ -50,7 +50,7 @@
 					>
 				</li>
 			</ul>
-			<a href="/about" role="button" class="primary">Quem Somos</a>
+			<a href="/about" role="button" class="primary" style="text-shadow: 0px 0px 20px #000000ff;">Quem Somos</a>
 		</div>
 	</div>
 </section>

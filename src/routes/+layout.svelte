@@ -49,8 +49,14 @@
 		}
 
 		oldYPos = actualYPos;
-		
+
 		return false;
+	}
+
+	function scrollTop() {
+		window.scrollTo({
+			top: 0
+		});
 	}
 </script>
 
@@ -61,7 +67,7 @@
 		<ul>
 			<li>
 				{#if $page.url.pathname === '/'}
-					<a class="contrast" href="#top">
+					<a class="contrast" href="#top" on:click={scrolltop}>
 						<img src={logo} alt="Main Page" id="page-logo" />
 					</a>
 				{:else}
