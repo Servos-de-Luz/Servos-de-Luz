@@ -58,7 +58,14 @@
 				como instrumentos da espiritualidade! Acontece todo segundo sábado do mês em Brasília!
 			</p>
 
-			<p>
+			<iframe
+				class="roda-instagram"
+				title="Instagram"
+				src="https://www.instagram.com/rodadecura.sagrada/embed"
+				frameborder="0"
+			/>
+
+			<p class="roda-instagram-alt">
 				Para mais informações, visite nosso instagram <a
 					href="https://www.instagram.com/rodadecura.sagrada/"
 					target="_blank"
@@ -71,9 +78,10 @@
 				src={cura}
 				loop
 				on:mouseenter={handleHover}
-				on:click={handleHover}
 				on:mouseleave={handleLeave}
+				on:focus={handleHover}
 				on:focusout={handleLeave}
+				on:click={handleHover}
 			>
 				<track kind="captions" />
 			</video>
@@ -103,11 +111,29 @@
 		width: 100%;
 	}
 
+	.roda-instagram {
+		border-radius: var(--border-radius);
+		width: 100%;
+		height: 207px;
+	}
+
+	.roda-instagram-alt {
+		display: none;
+	}
+
 	/* about media query small device */
 
 	@media (max-width: 900px) {
 		.about .container {
 			grid-template-columns: 1fr;
+		}
+
+		.roda-instagram {
+			display: none;
+		}
+
+		.roda-instagram-alt {
+			display: block;
 		}
 	}
 

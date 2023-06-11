@@ -23,6 +23,12 @@
 				toda a nossa vida. Contudo, com as nossas inseguranças e medos, não acessamos todo o nosso
 				potencial.
 			</cite>
+			<iframe
+				class="dallet-instagram"
+				title="Instagram"
+				src="https://www.instagram.com/ressonantesdalet/embed"
+				frameborder="0"
+			/>
 		</div>
 	</div>
 </section>
@@ -78,12 +84,14 @@
 	<div class="container">
 		<h2>Como Comprar</h2>
 		<p>
-			Após fazer o pagamento, mandar o comprovante com os pedidos que você deseja alcançar que
-			esteja na sua gravação para o email: <a href="mailto:servosdeluzdalet@gmail.com"
-				>servosdeluzdalet@gmail.com</a
-			>. Após o recebimento, responderemos o e-mail em até 10 dias (tempo para ser realizado a
-			gravação que será personalizada) com a gravação. Em caso de dúvida entrar em contato por
-			mensagem nos whatsapp <a href="tel:+55 (86) 99979-3085">(86) 99979-3085</a> 🌀💙
+			Antes de qualquer coisa, verifique se está aberto o <strong>período de gravações</strong> em
+			nosso instagram. <br />
+			Após fazer o pagamento, envie o comprovante junto aos pedidos que você deseja alcançar que esteja
+			na sua gravação para o email:
+			<a href="mailto:servosdeluzdalet@gmail.com">servosdeluzdalet@gmail.com</a>. Após o
+			recebimento, responderemos o e-mail em até 10 dias (tempo para ser realizado a gravação que
+			será personalizada) com a gravação. Em caso de dúvida entrar em contato por mensagem nos
+			whatsapp <a href="tel:+55 (86) 99979-3085">(86) 99979-3085</a> 🌀💙
 		</p>
 		<div class="buying-bttns">
 			<a
@@ -116,12 +124,6 @@
 		gap: 2rem;
 	}
 
-	@media (max-width: 768px) {
-		.introduction div {
-			grid-template-columns: 1fr;
-		}
-	}
-
 	.introduction div img {
 		border-radius: var(--border-radius);
 	}
@@ -134,5 +136,22 @@
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+	}
+
+	.dallet-instagram {
+		margin-top: 7px;
+		border-radius: var(--border-radius);
+		width: 100%;
+		height: 207px;
+	}
+
+	@media (max-width: 768px) {
+		.introduction div {
+			grid-template-columns: 1fr;
+		}
+
+		.dallet-instagram {
+			height: 400px;
+		}
 	}
 </style>
