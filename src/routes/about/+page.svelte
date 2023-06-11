@@ -63,14 +63,6 @@
 					rel="noopener noreferrer">@rosas_sagradas</a
 				> 🌹.
 			</p>
-
-			<p>
-				Veja mais em meu <a
-					href="https://www.instagram.com/rosas_sagradas/"
-					target="_blank"
-					rel="noopener noreferrer">instagram</a
-				>.
-			</p>
 		</div>
 		<img
 			class="founder-img"
