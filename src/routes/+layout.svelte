@@ -67,7 +67,7 @@
 		<ul>
 			<li>
 				{#if $page.url.pathname === '/'}
-					<a class="contrast" href="#top" on:click={scrolltop}>
+					<a class="contrast" href="#" on:click|preventDefault={scrollTop}>
 						<img src={logo} alt="Main Page" id="page-logo" />
 					</a>
 				{:else}

@@ -50,7 +50,9 @@
 					>
 				</li>
 			</ul>
-			<a href="/about" role="button" class="primary" style="text-shadow: 0px 0px 20px #000000ff;">Quem Somos</a>
+			<a href="/about" role="button" class="primary" style="text-shadow: 0px 0px 20px #000000ff;"
+				>Quem Somos</a
+			>
 		</div>
 	</div>
 </section>
@@ -120,7 +122,7 @@
 		<h2>Depoimentos</h2>
 		<div class="depoimentos-container">
 			{#if browser}
-				<Carousel autoplay autoplayDuration={10000} swiping={false}>
+				<Carousel autoplay autoplayDuration={10000} swiping={false} arrows={false}>
 					<div class="depoimento">
 						<cite>
 							Ontem eu estava com tantas dores no corpo, uma tremedeira, mal estar e a medida que
@@ -321,7 +323,6 @@
 	.depoimento {
 		display: flex;
 		align-items: center;
-		padding: 15px;
 		min-height: 350px;
 	}
 
