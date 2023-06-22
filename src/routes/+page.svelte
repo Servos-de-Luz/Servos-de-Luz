@@ -104,11 +104,11 @@
 			<div>
 				<img class="service-img" src={cursos} alt="" />
 				<div class="service-description">
-					<h3>Outros Cursos</h3>
+					<h3>Cursos</h3>
 					<p>
-						Uma ferramenta de crescimento, no autodesenvolvimento e evolução do físico, emocional,
-						mental e espiritual que auxilia na expansão da consciência para uma jornada produtiva em
-						todas os aspectos na vida.
+						Explore o caminho da cura, da compreensão e do autoconhecimento, despertando o potencial
+						interior para uma vida plena e iluminada. Os cursos são o seu ponto de partida para
+						desvendar mistérios e despertar a luz que habita em seu ser.
 					</p>
 					<a role="button" class="outline" href="/cursos">Saiba Mais</a>
 				</div>
